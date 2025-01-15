@@ -1,172 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkillMap - Home</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Introduction Section -->
-    <section id="intro" class="py-5 text-center bg-light">
-      <div class="container">
-        <h1 class="display-4">Bienvenue sur SkillMap</h1>
-        <p class="lead">
-          Découvrez mon parcours, mes compétences, et mes projets personnels et
-          professionnels.
+<!-- Introduction Section -->
+<section id="intro" class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4">Bienvenue sur SkillMap</h1>
+    <p class="lead">
+      Découvrez mon parcours, mes compétences, et mes projets personnels et
+      professionnels.
+    </p>
+  </div>
+</section>
+
+<!-- CV & Compétences Section -->
+<section id="cv" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Mon CV & Mes Compétences</h2>
+    <div class="row">
+      <!-- CV Column -->
+      <div class="col-md-6">
+        <h3>Mon CV</h3>
+        <p>message pour introduire mon cv</p>
+        <a class="btn btn-primary" (click)="DownloadCV()">Télécharger mon CV</a>
+      </div>
+      <!-- Skills Column -->
+      <div class="col-md-6">
+        <h3>Mes Compétences</h3>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Développement Frontend (HTML, CSS, JavaScript, Angular)
+          </li>
+          <li class="list-group-item">Développement Backend (Node.js)</li>
+          <li class="list-group-item">
+            Gestion de bases de données (SQL, NoSQL)
+          </li>
+          <li class="list-group-item">
+            Outils et Méthodologies (Git, Agile, Scrum)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Mes Projets</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="assets/project1.jpg" class="card-img-top" alt="Projet 1" />
+          <div class="card-body">
+            <h5 class="card-title">Projet SIL-Informatique</h5>
+            <p class="card-text">
+              Création d'une application SAAS de gestion d'informations dans une
+              entreprsie
+            </p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="assets/project2.jpg" class="card-img-top" alt="Projet 2" />
+          <div class="card-body">
+            <h5 class="card-title">PhotoShop</h5>
+            <p class="card-text">Site Web de consulation de photo en ligne</p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="assets/project3.jpg" class="card-img-top" alt="Projet 3" />
+          <div class="card-body">
+            <h5 class="card-title">Projet 3</h5>
+            <p class="card-text">Description rapide du projet 3.</p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact-info" class="py-5 text-center">
+  <div class="container">
+    <h2
+      class="d-inline-block border-bottom border-3 border-primary pb-2 text-uppercase mb-5"
+    >
+      Contact
+    </h2>
+
+    <div class="row justify-content-center">
+      <!-- Call Us -->
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-telephone-fill fs-1 text-primary"></i>
+        </div>
+        <h5>Appelez moi</h5>
+        <p>
+          <a href="tel:+33 6 40 10 00 18 " class="text-decoration-none"
+            >+33 6 84 10 00 18 (FR)</a
+          ><br />
         </p>
       </div>
-    </section>
-
-    <!-- CV & Compétences Section -->
-    <section id="cv" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Mon CV & Mes Compétences</h2>
-        <div class="row">
-          <!-- CV Column -->
-          <div class="col-md-6">
-            <h3>Mon CV</h3>
-            <p>message pour introduire mon cv</p>
-            <a href="#" class="btn btn-primary">Télécharger mon CV</a>
-          </div>
-          <!-- Skills Column -->
-          <div class="col-md-6">
-            <h3>Mes Compétences</h3>
-            <ul class="list-group">
-              <li class="list-group-item">
-                Développement Frontend (HTML, CSS, JavaScript, Angular)
-              </li>
-              <li class="list-group-item">Développement Backend (Node.js)</li>
-              <li class="list-group-item">
-                Gestion de bases de données (SQL, NoSQL)
-              </li>
-              <li class="list-group-item">
-                Outils et Méthodologies (Git, Agile, Scrum)
-              </li>
-            </ul>
-          </div>
+      <!-- Email Address -->
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-envelope-fill fs-1 text-primary"></i>
         </div>
+        <h5>Email</h5>
+        <p>
+          <a href="mailto:tom@moneret.fr" class="text-decoration-none"
+            >tom&#64;moneret.fr</a
+          >
+        </p>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Mes Projets</h2>
-        <div class="row">
-          <!-- Project 1 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="assets/project1.jpg"
-                class="card-img-top"
-                alt="Projet 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Projet SIL-Informatique</h5>
-                <p class="card-text">
-                  Création d'une application SAAS de gestion d'informations dans
-                  une entreprsie
-                </p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="assets/project2.jpg"
-                class="card-img-top"
-                alt="Projet 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">PhotoShop</h5>
-                <p class="card-text">
-                  Site Web de consulation de photo en ligne
-                </p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="assets/project3.jpg"
-                class="card-img-top"
-                alt="Projet 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Projet 3</h5>
-                <p class="card-text">Description rapide du projet 3.</p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
-              </div>
-            </div>
-          </div>
+      <!-- LinkedIn -->
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-linkedin fs-1 text-primary"></i>
         </div>
+        <h5>LinkedIn</h5>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/tom-moneret/"
+            class="text-decoration-none"
+            target="_blank"
+            >Page Linkedin</a
+          >
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="contact-info" class="py-5 text-center bg-light">
-      <div class="container">
-        <h2
-          class="d-inline-block border-bottom border-3 border-primary pb-2 text-uppercase"
-        >
-          Contact
-        </h2>
-
-        <div class="row justify-content-center">
-          <!-- Call Us -->
-          <div class="col-md-4">
-            <div class="mb-3">
-              <i class="bi bi-telephone-fill fs-1 text-primary"></i>
-            </div>
-            <h5>Appelez moi</h5>
-            <p>
-              <a href="tel:+33 6 40 10 00 18 " class="text-decoration-none"
-                >+33 6 84 10 00 18 (FR)</a
-              ><br />
-            </p>
-          </div>
-          <!-- Email Address -->
-          <div class="col-md-4">
-            <div class="mb-3">
-              <i class="bi bi-envelope-fill fs-1 text-primary"></i>
-            </div>
-            <h5>Email</h5>
-            <p>
-              <a href="mailto:tom@moneret.fr" class="text-decoration-none"
-                >tom&#64;moneret.fr</a
-              >
-            </p>
-          </div>
-          <!-- LinkedIn -->
-          <div class="col-md-4">
-            <div class="mb-3">
-              <i class="bi bi-linkedin fs-1 text-primary"></i>
-            </div>
-            <h5>LinkedIn</h5>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/tom-moneret/"
-                class="text-decoration-none"
-                target="_blank"
-                >Page Linkedin</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
